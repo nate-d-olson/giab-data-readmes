@@ -44,7 +44,7 @@ SHARING/ACCESS INFORMATION
 --------------------------
 
 **Licenses/restrictions placed on the data, or limitations of reuse**\
-CC0
+See NIST license and data use policy at the end of the document.
 
 **Recommended citation for the data**\
 [Provide citation with DOI]
