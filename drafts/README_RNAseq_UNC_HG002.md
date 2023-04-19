@@ -5,7 +5,7 @@ GENERAL INFORMATION
 -------------------
 
 **Title of Dataset**\
-Illumina mRNA and total RNA sequencing by Merker lab at UNC performed on three
+Illumina stranded mRNA and total RNA sequencing by Merker lab at UNC performed on three
 HG002 cell lines as part of the NIST-GIAB RNAseq pilot sequencing project.
 
 **Principal Investigator**\
@@ -26,9 +26,11 @@ Email: jason_merker@med.unc.edu
 2022-09
 
 **Background**\
-Illumina mRNA and total RNA sequencing by Merker lab at UNC performed on three
+Illumina stranded mRNA and total RNA sequencing by Lineberger Comprehensive Cancer 
+Center Translational Genomics Lab (TGL) at UNC performed on three
 HG002 cell lines as part of the NIST-GIAB RNAseq pilot sequencing project.
-The mRNA and total RNA sequencing was performed in tripplicate for the three samples. 
+The stranded mRNA and total RNA libraries were performed in triplicate and 
+sequenced together on the same flow cell. 
 
 **Usage**\
 Basecalled reads for RNAseq (mRNA and total RNA sequencing). 
@@ -117,7 +119,7 @@ Library Preparation
 mRNA sequencing libraries were prepared at TGL from 1000 ng of Total RNA in triplicate using a TruSeq Stranded mRNA Library Prep Kit (Illumina 20020595) following the manufacturer’s protocol (Illumina 1000000040498). Total RNA sequencing libraries were prepared at TGL from 1000 ng of Total RNA in triplicate using a TruSeq Stranded Total RNA Library Prep Gold Kit (Illumina 20020599) following the manufacturer’s protocol (Illumina 1000000040499).
 
 Sequencing
-mRNA and Total RNA library quality and quantity were measured using a D1000 DNA Screentape (Agilent 5067-5582) and a Qubit 1X dsDNA High Sensitivity Assay Kit (Thermo Fisher Q33231), combined at equal molar ratios in two separate pools (one for mRNA and one for Total RNA), and denatured following the manufacturer’s protocol (Illumina 15039740 for MiSeq or Illumina 1000000106351 for NovaSeq). Pooled libraries were first sequenced on a MiSeq Nano flow cell (Illumina MS-103-1001) to balance the pool before being sequenced on a NovaSeq 6000 S4 flow cell (Illumina 20027466) with an XP kit (Illumina 20021665). Each pool was sequenced on two lanes of the S4 flow cell with a 2x150 bp paired-end configuration following the manufacturer’s protocol (Illumina 1000000019358). The pools were designed to target about 325 million clusters per library on average.
+Library QC and sequencing was performed at TGL. mRNA and Total RNA library quality and quantity were measured using a D1000 DNA Screentape (Agilent 5067-5582) and a Qubit 1X dsDNA High Sensitivity Assay Kit (Thermo Fisher Q33231), combined at equal molar ratios in two separate pools (one for mRNA and one for Total RNA), and denatured following the manufacturer’s protocol (Illumina 15039740 for MiSeq or Illumina 1000000106351 for NovaSeq). Pooled libraries were first sequenced on a MiSeq Nano flow cell (Illumina MS-103-1001) to balance the pool before being sequenced on a NovaSeq 6000 S4 flow cell (Illumina 20027466) with an XP kit (Illumina 20021665). Each pool was sequenced on two lanes of the S4 flow cell with a 2x150 bp paired-end configuration following the manufacturer’s protocol (Illumina 1000000019358). The pools were designed to target about 325 million clusters per library on average.
 
 **Quality Assurance**\
 See `RNA_QC_report.pdf` for QA/QC information provided by UNC provided QC report provided by Merker Lab.
