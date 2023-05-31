@@ -5,7 +5,7 @@ GENERAL INFORMATION
 -------------------
 
 **Title of Dataset**\
-Illumina mRNA and long non-coding RNA sequencing for HG005
+Illumina mRNA and long non-coding RNA sequencing for HG004
 
 **Principal Investigator**\
 Justin M. Zook\
@@ -26,7 +26,7 @@ Email: acarroll@google.com
 
 **Background**\
 Illumina stranded mRNA and long non-coding RNA sequencing was contracted 
-out to Novogene by Google on the HG005 cell line as part of the NIST-GIAB 
+out to Novogene by Google on the HG004 cell line as part of the NIST-GIAB 
 RNAseq pilot sequencing project.
 
 **Usage**\
