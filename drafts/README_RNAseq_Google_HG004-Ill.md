@@ -5,7 +5,7 @@ GENERAL INFORMATION
 -------------------
 
 **Title of Dataset**\
-Illumina mRNA and long non-coding RNA sequencing for HG004
+Illumina mRNA and long non-coding RNA sequencing for HG004 
 
 **Principal Investigator**\
 Justin M. Zook\
