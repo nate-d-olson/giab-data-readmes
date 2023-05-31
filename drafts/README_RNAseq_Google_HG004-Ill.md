@@ -51,7 +51,7 @@ See NIST license and data use policy at the end of the document.
 **Links to other publicly accessible locations of the data**\
 Links to publicly accessible locations of the data:
 
-- NIH hosted GIAB ftp site: ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data_RNAseq/ChineseTrio/HG005_NA24631_son/Google_Illumina/
+- NIH hosted GIAB ftp site: ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data_RNAseq / AshkenazimTrio / HG004_NA24143_mother / Google_Illumina
 - SRA: TODO 
 
 --------------------
@@ -62,21 +62,21 @@ DATA & FILE OVERVIEW
 .
 ├── Long_noncoding_RNA
 │   ├── alignments
-│   │   ├── hg005_gm24631.lncrna.grch38.bam
-│   │   ├── hg005_gm24631.lncrna.grch38.bam.bai
+│   │   ├── hg004_gm24631.lncrna.grch38.bam
+│   │   ├── hg004_gm24631.lncrna.grch38.bam.bai
 │   │   └── md5.in
 │   └── reads
-│       ├── hg005_gm24631.lncrna.R1.fastq.gz
-│       ├── hg005_gm24631.lncrna.R2.fastq.gz
+│       ├── hg004_gm24631.lncrna.R1.fastq.gz
+│       ├── hg004_gm24631.lncrna.R2.fastq.gz
 │       └── md5.in
 └── mRNA
     ├── alignments
-    │   ├── hg005_gm24631.mrna.grch38.bam
-    │   ├── hg005_gm24631.mrna.grch38.bam.bai
+    │   ├── hg004_gm24631.mrna.grch38.bam
+    │   ├── hg004_gm24631.mrna.grch38.bam.bai
     │   └── md5.in
     └── reads
-        ├── hg005_gm24631.mrna.R1.fastq.gz
-        ├── hg005_gm24631.mrna.R2.fastq.gz
+        ├── hg004_gm24631.mrna.R1.fastq.gz
+        ├── hg004_gm24631.mrna.R2.fastq.gz
         └── md5.in
 ```
 
@@ -125,7 +125,7 @@ samtools sort -@ 6 -o [GIABID].sorted.bam -T [GIABID].sorted [GIABID].Aligned.ou
 
 - Duplicates marked using MarkDuplicates version 2.26.10    
 ```
-MarkDuplicates INPUT=[HG005.sorted.bam] OUTPUT=HG005.markdup.sorted.bam METRICS_FILE=HG005.markdup.sorted.MarkDuplicates.metrics.txt REMOVE_DUPLICATES=false ASSUME_SORTED=true TMP_DIR=[tmp] VALIDATION_STRINGENCY=LENIENT    MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP=50000 MAX_FILE_HANDLES_FOR_READ_ENDS_MAP=8000 SORTING_COLLECTION_SIZE_RATIO=0.25 TAG_DUPLICATE_SET_MEMBERS=false REMOVE_SEQUENCING_DUPLICATES=false TAGGING_POLICY=DontTag CLEAR_DT=true DUPLEX_UMI=false ADD_PG_TAG_TO_READS=true DUPLICATE_SCORING_STRATEGY=SUM_OF_BASE_QUALITIES PROGRAM_RECORD_ID=MarkDuplicates PROGRAM_GROUP_NAME=MarkDuplicates READ_NAME_REGEX=<optimized capture of last three ':' separated fields as numeric values> OPTICAL_DUPLICATE_PIXEL_DISTANCE=100 MAX_OPTICAL_DUPLICATE_SET_SIZE=300000 VERBOSITY=INFO QUIET=false COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json USE_JDK_DEFLATER=false USE_JDK_INFLATER=false
+MarkDuplicates INPUT=[HG004.sorted.bam] OUTPUT=HG004.markdup.sorted.bam METRICS_FILE=HG004.markdup.sorted.MarkDuplicates.metrics.txt REMOVE_DUPLICATES=false ASSUME_SORTED=true TMP_DIR=[tmp] VALIDATION_STRINGENCY=LENIENT    MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP=50000 MAX_FILE_HANDLES_FOR_READ_ENDS_MAP=8000 SORTING_COLLECTION_SIZE_RATIO=0.25 TAG_DUPLICATE_SET_MEMBERS=false REMOVE_SEQUENCING_DUPLICATES=false TAGGING_POLICY=DontTag CLEAR_DT=true DUPLEX_UMI=false ADD_PG_TAG_TO_READS=true DUPLICATE_SCORING_STRATEGY=SUM_OF_BASE_QUALITIES PROGRAM_RECORD_ID=MarkDuplicates PROGRAM_GROUP_NAME=MarkDuplicates READ_NAME_REGEX=<optimized capture of last three ':' separated fields as numeric values> OPTICAL_DUPLICATE_PIXEL_DISTANCE=100 MAX_OPTICAL_DUPLICATE_SET_SIZE=300000 VERBOSITY=INFO QUIET=false COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json USE_JDK_DEFLATER=false USE_JDK_INFLATER=false
 ```
 
 
