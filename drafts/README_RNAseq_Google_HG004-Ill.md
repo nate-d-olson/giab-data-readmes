@@ -51,7 +51,7 @@ See NIST license and data use policy at the end of the document.
 **Links to other publicly accessible locations of the data**\
 Links to publicly accessible locations of the data:
 
-- NIH hosted GIAB ftp site: ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data_RNAseq / AshkenazimTrio / HG004_NA24143_mother / Google_Illumina
+- NIH hosted GIAB ftp site: ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data_RNAseq/AshkenazimTrio/HG004_NA24143_mother/Google_Illumina
 - SRA: TODO 
 
 --------------------
@@ -125,7 +125,7 @@ samtools sort -@ 6 -o [GIABID].sorted.bam -T [GIABID].sorted [GIABID].Aligned.ou
 
 - Duplicates marked using MarkDuplicates version 2.26.10    
 ```
-MarkDuplicates INPUT=[HG004.sorted.bam] OUTPUT=HG004.markdup.sorted.bam METRICS_FILE=HG004.markdup.sorted.MarkDuplicates.metrics.txt REMOVE_DUPLICATES=false ASSUME_SORTED=true TMP_DIR=[tmp] VALIDATION_STRINGENCY=LENIENT    MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP=50000 MAX_FILE_HANDLES_FOR_READ_ENDS_MAP=8000 SORTING_COLLECTION_SIZE_RATIO=0.25 TAG_DUPLICATE_SET_MEMBERS=false REMOVE_SEQUENCING_DUPLICATES=false TAGGING_POLICY=DontTag CLEAR_DT=true DUPLEX_UMI=false ADD_PG_TAG_TO_READS=true DUPLICATE_SCORING_STRATEGY=SUM_OF_BASE_QUALITIES PROGRAM_RECORD_ID=MarkDuplicates PROGRAM_GROUP_NAME=MarkDuplicates READ_NAME_REGEX=<optimized capture of last three ':' separated fields as numeric values> OPTICAL_DUPLICATE_PIXEL_DISTANCE=100 MAX_OPTICAL_DUPLICATE_SET_SIZE=300000 VERBOSITY=INFO QUIET=false COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json USE_JDK_DEFLATER=false USE_JDK_INFLATER=false
+MarkDuplicates INPUT=[GIABID].sorted.bam OUTPUT=HG004.markdup.sorted.bam METRICS_FILE=HG004.markdup.sorted.MarkDuplicates.metrics.txt REMOVE_DUPLICATES=false ASSUME_SORTED=true TMP_DIR=[tmp] VALIDATION_STRINGENCY=LENIENT    MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP=50000 MAX_FILE_HANDLES_FOR_READ_ENDS_MAP=8000 SORTING_COLLECTION_SIZE_RATIO=0.25 TAG_DUPLICATE_SET_MEMBERS=false REMOVE_SEQUENCING_DUPLICATES=false TAGGING_POLICY=DontTag CLEAR_DT=true DUPLEX_UMI=false ADD_PG_TAG_TO_READS=true DUPLICATE_SCORING_STRATEGY=SUM_OF_BASE_QUALITIES PROGRAM_RECORD_ID=MarkDuplicates PROGRAM_GROUP_NAME=MarkDuplicates READ_NAME_REGEX=<optimized capture of last three ':' separated fields as numeric values> OPTICAL_DUPLICATE_PIXEL_DISTANCE=100 MAX_OPTICAL_DUPLICATE_SET_SIZE=300000 VERBOSITY=INFO QUIET=false COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json USE_JDK_DEFLATER=false USE_JDK_INFLATER=false
 ```
 
 
@@ -145,12 +145,15 @@ The detail statistics for the quality of sequencing data are shown in Table 1.
 
 Table 1 Data Quality Summary
 
-Sample	Raw reads	Raw data	Effective(%)	Error(%)	Q20(%)	Q30(%)	GC(%)
-NA26105_C1	198886442	29.8	87.39	0.03	97.73	93.94	48.76
-NA27730_B2	225918726	33.9	89.96	0.03	97.87	94.15	47.98
-NA24385_K2	214746836	32.2	96.04	0.03	97.76	94.12	50.03
-NA24143_H5	215887922	32.4	95.04	0.03	97.46	93.63	51.79
-NA24631_F7	208909724	31.3	96.19	0.03	97.71	93.93	50.89
+| Sample     | Raw reads | Raw data | Effective(%) | Error(%) | Q20(%) | Q30(%) | GC(%) |
+|------------|-----------|----------|--------------|----------|--------|--------|-------|
+| NA26105_C1 | 198886442 | 29.8     | 87.39        | 0.03     | 97.73  | 93.94  | 48.76 |
+| NA27730_B2 | 225918726 | 33.9     | 89.96        | 0.03     | 97.87  | 94.15  | 47.98 |
+| NA24385_K2 | 214746836 | 32.2     | 96.04        | 0.03     | 97.76  | 94.12  | 50.03 |
+| NA24143_H5 | 215887922 | 32.4     | 95.04        | 0.03     | 97.46  | 93.63  | 51.79 |
+| NA24631_F7 | 208909724 | 31.3     | 96.19        | 0.03     | 97.71  | 93.93  | 50.89 |
+|            |           |          |              |          |        |        |       |
+|            |           |          |              |          |        |        |       |
 
 Sample: sample name
 Raw reads: total amount of reads of raw data, each four lines taken as one unit. For paired-end sequencing, it equals the amount of read1 and read2, otherwise it equals the amount of read1 for single-end sequencing.
