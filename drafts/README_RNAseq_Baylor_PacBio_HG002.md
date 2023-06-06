@@ -1,4 +1,4 @@
-This README_RNAseq_UNC_HG002.md was generated on 2023-04-25 by Nate Olson.
+This README_RNAseq_Baylor_PacBio_HG002.md was generated on 2023-04-25 by Nate Olson.
 
 ------------------- 
 GENERAL INFORMATION
@@ -50,7 +50,7 @@ See NIST license and data use policy at the end of the document.
 **Links to other publicly accessible locations of the data**\
 Links to publicly accessible locations of the data:
 
-- NIH hosted GIAB ftp site: ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data_RNAseq/AshkenazimTrio/HG002_NA24385_son/Merker_UNC_Illumina/
+- NIH hosted GIAB ftp site: ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data_RNAseq/AshkenazimTrio/HG002_NA24385_son/Baylor_PacBio
 - SRA: TODO 
 
 --------------------
