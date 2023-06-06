@@ -36,11 +36,6 @@ sequenced together on the same flow cell.
 Basecalled reads for RNAseq (mRNA and total RNA sequencing). 
 Fastq files can be processed using any standard transcriptomic pipeline.
 
-**Limitations**\
-[Discuss any known limitations of the data being described by
-README. e.g. data is incomplete, assumptions that were made, exclusions, known
-issues, etc.]
-
 --------------------------
 SHARING/ACCESS INFORMATION
 --------------------------
@@ -49,13 +44,13 @@ SHARING/ACCESS INFORMATION
 See NIST license and data use policy at the end of the document.
 
 **Recommended citation for the data**\
-[Provide citation with DOI]
+WILL ADD WHEN AVAILABLE
 
 **Links to other publicly accessible locations of the data**\
 Links to publicly accessible locations of the data:
 
 - NIH hosted GIAB ftp site: ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data_RNAseq/ChineseTrio/HG005_NA24631_son/UNC_Illumina
-- SRA: TODO 
+- SRA: WILL ADD WHEN AVAILABLE
 
 --------------------
 DATA & FILE OVERVIEW
@@ -123,7 +118,6 @@ Library QC and sequencing was performed at TGL. mRNA and Total RNA library quali
 
 **Quality Assurance**\
 See `RNA_QC_report.pdf` for QA/QC information provided by UNC provided QC report provided by Merker Lab.
-TODO- add to ftp site https://drive.google.com/file/d/1EImNO8BnzBdooXZIt7oo2S_H1wPobSnv/view?usp=sharing
 
 
 --------------------------
