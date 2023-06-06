@@ -1,4 +1,4 @@
-This README_RNAseq_UNC_HG002.md was generated on 2023-04-14 by Nate Olson.
+This README_RNAseq_UNC_ILL_HG002.md was generated on 2023-04-14 by Nate Olson.
 
 ------------------- 
 GENERAL INFORMATION
