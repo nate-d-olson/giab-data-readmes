@@ -1,4 +1,4 @@
-This README_RNAseq_Google_HG004-PacBio.md was generated on 2023-04-25 by Nate Olson.
+This README_RNAseq_Google_HG004_PacBio.md was generated on 2023-04-25 by Nate Olson.
 
 ------------------- 
 GENERAL INFORMATION
