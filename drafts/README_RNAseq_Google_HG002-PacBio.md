@@ -1,4 +1,4 @@
-This README_RNAseq_Google_HG002-PacBio.md was generated on 2023-06-06 by Ummey Jannat.
+This README_RNAseq_Google_HG002_PacBio.md was generated on 2023-06-06 by Ummey Jannat.
 
 ------------------- 
 GENERAL INFORMATION
