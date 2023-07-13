@@ -18,7 +18,7 @@ Institution: National Institute of Standards and Technology (NIST)\
 Email: nolson@nist.gov
 
 **Date of data collection**\
-TODO
+2021-11
 
 **Background**\
 High coverage (100X) BGIsequencing of GIAB HG002 RM DNA [TODO - add brief method description].
@@ -52,7 +52,15 @@ DATA & FILE OVERVIEW
 --------------------
  
 ```
-[TODO - file tree]
+├── HG002_GRCh37_BGIseq-2x150-100x_NIST_20211126_indel.vcf.gz
+├── HG002_GRCh37_BGIseq-2x150-100x_NIST_20211126_indel.vcf.gz.tbi
+├── HG002_GRCh37_BGIseq-2x150-100x_NIST_20211126_snp.vcf.gz
+├── HG002_GRCh37_BGIseq-2x150-100x_NIST_20211126_snp.vcf.gz.tbi
+├── HG002_GRCh38_BGIseq-2x150-100x_NIST_20211126_indel.vcf.gz
+├── HG002_GRCh38_BGIseq-2x150-100x_NIST_20211126_indel.vcf.gz.tbi
+├── HG002_GRCh38_BGIseq-2x150-100x_NIST_20211126_snp.vcf.gz
+├── HG002_GRCh38_BGIseq-2x150-100x_NIST_20211126_snp.vcf.gz.tbi
+└── md5.in
 ```
 
 
