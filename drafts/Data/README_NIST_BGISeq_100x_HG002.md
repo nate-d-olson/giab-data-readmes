@@ -1,4 +1,4 @@
-This README_BGIseq_Google_HG002.md was generated on 2023-07-12 by Ummey Jannat.
+This README_NIST_BGISeq_100x_HG002.md was generated on 2023-07-12 by Ummey Jannat.
 
 ------------------- 
 GENERAL INFORMATION
@@ -96,7 +96,8 @@ DATA & FILE OVERVIEW
 
 
 **File Naming Convention**\
-TODO
+Files are named according to the High coverage (100X) BGIsequencing of GIAB HG002. `HG002.[instrument id]_[YYMMDD]_[time].fq.gz`
+
 
 **File Descriptions**
 TODO
@@ -104,7 +105,30 @@ TODO
 --------------------------
 METHODOLOGICAL INFORMATION
 --------------------------
-TODO
+Sequencing read length: PE150
+
+Alignment: In this project, total clean reads per sample were aligned to the human reference genome using Burrows-Wheeler Aligner (BWA)
+
+On average, 99.84% mapped successfully and 95.46% mapped uniquely. The duplicate reads were marked from total mapped reads, resulting in about 1.08% and 117.47-fold mean sequencing depth on the whole genome excluding gap regions. On average per sequencing individual, 99.84% of the whole genome excluding gap regions were covered by at least 1X coverage.
+
+All clean reads were aligned to the human reference genome using Burrows-Wheeler Aligner (BWA
+V0.7.17) . We did mapping for each lane separately and also add the read group identifier, which
+by lane, into the alignment files. Here we used BWA-MEM method. Below are the BWA information
+and commands used for the alignments:
+Software Version Link
+BWA v0.7.17 http://bio-bwa.sourceforge.net/
+Here the 'read_group_tag' need to be provided, e.g. `@RG\tID:GroupID\tSM:SampleID\tPL:illumina\tLB:libraryID`.
+
+Then, use samtools to sort the SAM files according to the mapped position and convert them into
+BAM format files. The software information and command line parameters are as follows:
+Software Version Link
+samtools 1.3.1 http://www.htslib.org/
+samtools sort @ 10 o sorted bam O BAM input bam
+bwa mem -M -R 'read_group_tag' reference.fasta read1.fq.gz read2.fq.gz > aligned_reads
+[1]
+[2][3]
+22 / 37
+samtools sort -@ 10 -o sorted.bam -O BAM input.bam
 
 **Quality Assurance**\
 TODO

@@ -1,4 +1,4 @@
-This README_BGIseq_Google_HG002.md was generated on 2023-07-12 by Ummey Jannat.
+This README_NIST_BGISeq_100x_HG002.md was generated on 2023-07-12 by Ummey Jannat.
 
 ------------------- 
 GENERAL INFORMATION
@@ -65,7 +65,8 @@ DATA & FILE OVERVIEW
 
 
 **File Naming Convention**\
-TODO
+Files are named according to the High coverage (100X) BGIsequencing of GIAB HG002 `HG002.[instrument id]_[YYMMDD]_[time].vcf.gz.tbi`
+
 
 **File Descriptions**
 TODO
@@ -73,10 +74,62 @@ TODO
 --------------------------
 METHODOLOGICAL INFORMATION
 --------------------------
-TODO
+DNA Sequencing
+DNBSEQ Short-read library preparation：
+1. DNA fragmentation
+2. Size selection
+3. End repair and "A" tailing
+4. Adapter ligation
+5. Product size selection
+6. PCR reaction
+7. Library QC
+8. Sequencing
+Sequencing-derived raw image files were processed by DNBSEQ basecalling Software for base-calling
+with default parameters and the sequence data of each individual was generated as paired-end
+reads, which was defined as "raw data" and stored in FASTQ format.
+
+Bioinformatics Analysis Overview
+The bioinformatics analysis began with the sequencing data. First, the clean data or clean reads was
+produced by data filtering on raw data. Then all clean data of each sample was mapped to the human
+reference genome to get initial comparison file in BAM format. Burrows-Wheeler Aligner (BWA)
+software was used to do the alignment. To ensure accurate variant calling, we followed recommended
+Best Practices for variant analysis with the Genome Analysis Toolkit(GATK). Base quality score
+recalibration and duplicate reads marked were performed using GATK . The sequencing depth and
+coverage for each individual were calculated based on the alignments.
+In addition, the strict data analysis quality control system(QC) in the whole pipeline was built to
+guarantee qualified sequencing data.
+
+Variant Calling
+Use GATK HaplotypeCaller tool to simultaneously detect SNPs and InDels . The principle is to do
+partial denovo assembly of haplotypes in areas with variant signals. The original mutation set is
+stored in VCF format, which includes all potential mutation sites. The software information and
+command line parameters are as follows:
+Software Version Link
+GATK
+HaplotypeCaller
+v4.1.4.1
+https://gatk.broadinstitute.org/hc/enus/articles/360037225632-HaplotypeCaller 
+
+```
+gatk -T HaplotypeCaller \
+-R reference.fasta \
+-I bqsr.bam \
+-O raw.g.vcf
+-ERC GVCF
+```
+
+Germline mutation calling is based on the comparison result Bam file, including the detection and
+annotation of SNP, InDel, SV and CNV (the latter two are limited to whole-genome sequencing).
+
+
 
 **Quality Assurance**\
-TODO
+To ensure accurate variant calling, we followed recommended Best Practices for variant analysis with the Genome Analysis Toolkit(GATK). Base quality score
+recalibration and duplicate reads marked were performed using GATK. The sequencing depth and
+coverage for each individual were calculated based on the alignments.
+
+In addition, the strict data analysis quality control system(QC) in the whole pipeline was built to
+guarantee qualified sequencing data.
 
 --------------------------
 DATA USE POLICY
