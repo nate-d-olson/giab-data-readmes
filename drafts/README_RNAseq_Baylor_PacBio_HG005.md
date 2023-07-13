@@ -1,6 +1,5 @@
 This README_RNAseq_Baylor_PacBio_HG005.md was generated on 2023-06-05 by Ummey Jannat.
 
-------------------- 
 GENERAL INFORMATION
 -------------------
 
@@ -10,16 +9,16 @@ HG005 PacBio IsoSeq by the Baylor College of Medicine Human Genome Sequencing Ce
 **Principal Investigator**\
 Justin M. Zook\
 Institution: National Institute of Standards and Technology (NIST)\
-Email: jzook@nist.gov
+Email: <jzook@nist.gov>
 
 **Dataset Contact(s)**\
 Nathan D. Olson\
 Institution: National Institute of Standards and Technology (NIST)\
-Email: nolson@nist.gov
+Email: <nolson@nist.gov>
 
 Fritz Sedlazeck\
 Institution: Baylor College of Medicine\
-Email: Fritz.Sedlazeck@bcm.edu
+Email: <Fritz.Sedlazeck@bcm.edu>
 
 **Date of data collection**\
 2022-01
@@ -32,12 +31,6 @@ HG002 cell lines as part of the NIST-GIAB RNAseq pilot sequencing project.
 Consensus basecalled reads for RNAseq, unaligned bam file can be processed using any 
 standard transcriptomic pipeline optimized for HiFi IsoSeq data.
 
-**Limitations**\
-[Discuss any known limitations of the data being described by
-README. e.g. data is incomplete, assumptions that were made, exclusions, known
-issues, etc.]
-
---------------------------
 SHARING/ACCESS INFORMATION
 --------------------------
 
@@ -51,13 +44,12 @@ See NIST license and data use policy at the end of the document.
 Links to publicly accessible locations of the data:
 
 - NIH hosted GIAB ftp site: ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data_RNAseq/ChineseTrio/HG005_NA24631_son/Baylor_PacBio
-- SRA: TODO 
+- SRA: Will update when submitted
 
---------------------
 DATA & FILE OVERVIEW
 --------------------
  
-```
+```text
 .
 └── reads
     ├── m64139_220127_180020.hifi_reads.bam
@@ -74,14 +66,13 @@ DATA & FILE OVERVIEW
 | m64139_220130_061226 | HG005-NA27730-iPSCfromPBMC|
 | m64139_220131_122551 | HG005-NA26105-iPSCfromLCL |  
 
-
 **File Naming Convention**\
 Files are named according to the PacBio movie naming convention. `[instrument id]_[YYMMDD]_[time].hifi_reads.bam`
 
-**File Descriptions**
+**File Descriptions**\
+
 - `*.hifi_reads.bam`: unaligned consensus basecalled reads.
 
---------------------------
 METHODOLOGICAL INFORMATION
 --------------------------
 
@@ -105,10 +96,6 @@ METHODOLOGICAL INFORMATION
 |  SEQUENCING  |              sequencing-kit |                      SQK 123660101826100081222                     |                      SQK 123660101826100081222                     |                      SQK 123660101826100081222                     |
 |  SEQUENCING  |        sequencing-selection |                                HIFI                                |                                HIFI                                |                                HIFI                                |
 
-**Quality Assurance**\
-TODO
-
---------------------------
 DATA USE POLICY
 --------------------------
 
@@ -135,4 +122,3 @@ IN ANY WAY CONNECTED WITH THIS SOFTWARE, WHETHER OR NOT BASED UPON WARRANTY,
 CONTRACT, TORT, OR OTHERWISE, WHETHER OR NOT INJURY WAS SUSTAINED BY PERSONS OR
 PROPERTY OR OTHERWISE, AND WHETHER OR NOT LOSS WAS SUSTAINED FROM, OR AROSE OUT
 OF THE RESULTS OF, OR USE OF, THE SOFTWARE OR SERVICES PROVIDED HEREUNDER.
-
