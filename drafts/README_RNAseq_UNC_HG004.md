@@ -1,6 +1,5 @@
 This README_RNAseq_UNC_ILL_HG004.md was generated on 2023-06-06 by Ummey Jannat.
 
-------------------- 
 GENERAL INFORMATION
 -------------------
 
@@ -11,32 +10,31 @@ HG004 cell lines as part of the NIST-GIAB RNAseq pilot sequencing project.
 **Principal Investigator**\
 Justin M. Zook\
 Institution: National Institute of Standards and Technology (NIST)\
-Email: jzook@nist.gov
+Email: <jzook@nist.gov>
 
 **Dataset Contact(s)**\
 Nathan D. Olson\
 Institution: National Institute of Standards and Technology (NIST)\
-Email: nolson@nist.gov
+Email: <nolson@nist.gov>
 
 Jason Merker\
 Institution: University of North Carolina at Chapel Hill (UNC)\
-Email: jason_merker@med.unc.edu
+Email: <jason_merker@med.unc.edu>
 
 **Date of data collection**\
 2022-09
 
 **Background**\
-Illumina stranded mRNA and total RNA sequencing by Lineberger Comprehensive Cancer 
+Illumina stranded mRNA and total RNA sequencing by Lineberger Comprehensive Cancer
 Center Translational Genomics Lab (TGL) at UNC performed on three
 HG002 cell lines as part of the NIST-GIAB RNAseq pilot sequencing project.
-The stranded mRNA and total RNA libraries were performed in triplicate and 
-sequenced together on the same flow cell. 
+The stranded mRNA and total RNA libraries were performed in triplicate and
+sequenced together on the same flow cell.
 
 **Usage**\
-Basecalled reads for RNAseq (mRNA and total RNA sequencing). 
+Basecalled reads for RNAseq (mRNA and total RNA sequencing).
 Fastq files can be processed using any standard transcriptomic pipeline.
 
---------------------------
 SHARING/ACCESS INFORMATION
 --------------------------
 
@@ -52,11 +50,10 @@ Links to publicly accessible locations of the data:
 - NIH hosted GIAB ftp site: ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data_RNAseq/AshkenazimTrio/HG004_NA24143_mother/UNC_Illumina
 - SRA: WILL ADD WHEN AVAILABLE
 
---------------------
 DATA & FILE OVERVIEW
 --------------------
- 
-```
+
+```text
 └── read_fastqs
     ├── HG004_GM24385_replicate1_mRNAseq_ILLUMINA_UNC_20220524_AGGTTATA-CAGTTCCG_R1_001.fastq.gz
     ├── HG004_GM24385_replicate1_mRNAseq_ILLUMINA_UNC_20220524_AGGTTATA-CAGTTCCG_R2_001.fastq.gz
@@ -100,10 +97,10 @@ DATA & FILE OVERVIEW
 **File Naming Convention**\
 `[GIAB ID]_[CELL LINE ID]_replicate[number]_[Library method]_ILLUMINA_UNC_[sequencing date]_[sequencing barcode]_[READ]_[lane].fastq.gz`
 
-**File Descriptions**
+**File Descriptions**\
+
 - `*.fastq.gz`: basecall files in gzipped compressed fastq file format
 
---------------------------
 METHODOLOGICAL INFORMATION
 --------------------------
 
@@ -119,8 +116,6 @@ Library QC and sequencing was performed at TGL. mRNA and Total RNA library quali
 **Quality Assurance**\
 See `RNA_QC_report.pdf` for QA/QC information provided by UNC provided QC report provided by Merker Lab.
 
-
---------------------------
 DATA USE POLICY
 --------------------------
 
@@ -147,4 +142,3 @@ IN ANY WAY CONNECTED WITH THIS SOFTWARE, WHETHER OR NOT BASED UPON WARRANTY,
 CONTRACT, TORT, OR OTHERWISE, WHETHER OR NOT INJURY WAS SUSTAINED BY PERSONS OR
 PROPERTY OR OTHERWISE, AND WHETHER OR NOT LOSS WAS SUSTAINED FROM, OR AROSE OUT
 OF THE RESULTS OF, OR USE OF, THE SOFTWARE OR SERVICES PROVIDED HEREUNDER.
-
