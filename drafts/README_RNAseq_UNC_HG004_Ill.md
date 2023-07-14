@@ -1,4 +1,4 @@
-This README_RNAseq_UNC_ILL_HG004.md was generated on 2023-06-06 by Ummey Jannat.
+This README_RNAseq_UNC_HG004_Ill.md was generated on 2023-06-06 by Ummey Jannat.
 
 GENERAL INFORMATION
 -------------------

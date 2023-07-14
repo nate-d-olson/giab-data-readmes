@@ -1,10 +1,10 @@
-This README_RNAseq_Baylor_PacBio_HG004.md was generated on 2023-06-05 by Ummey Jannat.
+This README_RNAseq_Baylor_HG005_PacBio.md was generated on 2023-06-05 by Ummey Jannat.
 
 GENERAL INFORMATION
 -------------------
 
 **Title of Dataset**\
-HG004 PacBio IsoSeq by the Baylor College of Medicine Human Genome Sequencing Center.
+HG005 PacBio IsoSeq by the Baylor College of Medicine Human Genome Sequencing Center.
 
 **Principal Investigator**\
 Justin M. Zook\
@@ -25,10 +25,10 @@ Email: <Fritz.Sedlazeck@bcm.edu>
 
 **Background**\
 PacBio IsoSeq by Baylor College of Medicine Human Genome Sequencing Center on three
-HG004 cell lines as part of the NIST-GIAB RNAseq pilot sequencing project.
+HG002 cell lines as part of the NIST-GIAB RNAseq pilot sequencing project.
 
 **Usage**\
-Consensus basecalled reads for RNAseq, unaligned bam file can be processed using any
+Consensus basecalled reads for RNAseq, unaligned bam file can be processed using any 
 standard transcriptomic pipeline optimized for HiFi IsoSeq data.
 
 SHARING/ACCESS INFORMATION
@@ -38,17 +38,17 @@ SHARING/ACCESS INFORMATION
 See NIST license and data use policy at the end of the document.
 
 **Recommended citation for the data**\
-Manuscript in development
+[Provide citation with DOI]
 
 **Links to other publicly accessible locations of the data**\
 Links to publicly accessible locations of the data:
 
-- NIH hosted GIAB ftp site: ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data_RNAseq/AshkenazimTrio/HG004_NA24143_mother/Baylor_PacBio
+- NIH hosted GIAB ftp site: ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data_RNAseq/ChineseTrio/HG005_NA24631_son/Baylor_PacBio
 - SRA: Will update when submitted
 
 DATA & FILE OVERVIEW
 --------------------
-
+ 
 ```text
 .
 └── reads
@@ -62,9 +62,9 @@ DATA & FILE OVERVIEW
 
 | movie_name           | sample_id                 |
 | ---------------------|---------------------------|
-| m64139_220127_180020 | HG004-NA24385-LCL         |
-| m64139_220130_061226 | HG004-NA27730-iPSCfromPBMC|
-| m64139_220131_122551 | HG004-NA26105-iPSCfromLCL |  
+| m64139_220127_180020 | HG005-NA24385-LCL         |
+| m64139_220130_061226 | HG005-NA27730-iPSCfromPBMC|
+| m64139_220131_122551 | HG005-NA26105-iPSCfromLCL |  
 
 **File Naming Convention**\
 Files are named according to the PacBio movie naming convention. `[instrument id]_[YYMMDD]_[time].hifi_reads.bam`
@@ -76,7 +76,7 @@ Files are named according to the PacBio movie naming convention. `[instrument id
 METHODOLOGICAL INFORMATION
 --------------------------
 
-|      RNA     |                   sample-id |                          HG004-NA24385-LCL                         |                     HG004-NA27730-iPSCfromPBMC                     |                      HG004-NA26105-iPSCfromLCL                     |
+|      RNA     |                   sample-id |                          HG005-NA24385-LCL                         |                     HG005-NA27730-iPSCfromPBMC                     |                      HG005-NA26105-iPSCfromLCL                     |
 |:------------:|----------------------------:|:------------------------------------------------------------------:|:------------------------------------------------------------------:|:------------------------------------------------------------------:|
 |      QC      |                  date-of-QC |                              1/13/2022                             |                              1/11/2022                             |                              1/11/2022                             |
 |      QC      |                         RIN |                                  9                                 |                                 9.5                                |                                 9.5                                |

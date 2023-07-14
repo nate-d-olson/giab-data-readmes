@@ -1,4 +1,4 @@
-This README_RNAseq_Baylor_PacBio_HG002.md was generated on 2023-04-25 by Nate Olson.
+This README_RNAseq_Baylor_HG002_PacBio.md was generated on 2023-04-25 by Nate Olson.
 
 GENERAL INFORMATION
 -------------------
