@@ -34,7 +34,7 @@ See NIST license and data use policy at the end of the document.
 **Links to other publicly accessible locations of the data**\
 Links to publicly accessible locations of the data:
 
-- NIH hosted GIAB ftp site: ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/analysis/NIST_BGIseq_2x150bp_100x
+- NIH hosted GIAB ftp site: ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/ChineseTrio/analysis/NIST_BGIseq_2x150bp_100x
 - SRA: Will provide when submitted
 
 DATA & FILE OVERVIEW
