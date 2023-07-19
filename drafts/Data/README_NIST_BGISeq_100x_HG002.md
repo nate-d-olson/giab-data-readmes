@@ -44,7 +44,7 @@ Links to publicly accessible locations of the data:
 DATA & FILE OVERVIEW
 --------------------
 
-```
+```text
 .
 ├── GRCh37
 │   ├── HG002_GRCh37_BGIseq-2x150-100x_NIST_20211126.bam
@@ -100,7 +100,8 @@ Files are named according to the High coverage (100X) BGIsequencing of GIAB HG00
 METHODOLOGICAL INFORMATION
 --------------------------
 
-## DNBSEQ Short-read library preparation
+DNBSEQ Short-Read Library Preparation
+======================================
 
 1. DNA fragmentation
 2. Size selection
@@ -115,7 +116,8 @@ Sequencing-derived raw image files were processed by DNBSEQ basecalling Software
 with default parameters and the sequence data of each individual was generated as paired-end
 reads, which was defined as "raw data" and stored in FASTQ format.
 
-## Bioinformatics Analysis Overview
+Bioinformatics Analysis Overview
+================================
 
 The bioinformatics analysis began with the sequencing data. First, the clean data or clean reads was
 produced by data filtering on raw data. Then all clean data of each sample was mapped to the human

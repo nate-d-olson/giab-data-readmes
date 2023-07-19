@@ -20,7 +20,7 @@ Email: <nolson@nist.gov>
 2021-11
 
 **Background**\
-High coverage (100X) BGIsequencing of GIAB HG002 RM DNA [TODO - add brief method description].
+High coverage (100X) BGI sequencing of GIAB HG002 RM DNA. Sequencing was contracted out to BGIseq by NIST and performed using the DNBSEQ platform. Variant calling was performed using the GATK Haplotype Caller.
 
 **Usage**\
 Variant call files (vcf) can be use in any bioinformatic pipeline or downstream analyses for whole genome seqeuncing variant call analysis.

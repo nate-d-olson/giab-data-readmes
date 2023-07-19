@@ -9,18 +9,18 @@ HG005 BGIseq High Coverage (100X) 150bp paired-end.
 **Principal Investigator**\
 Justin M. Zook\
 Institution: National Institute of Standards and Technology (NIST)\
-Email: jzook@nist.gov
+Email: <jzook@nist.gov>
 
 **Dataset Contact(s)**\
 Nathan D. Olson\
 Institution: National Institute of Standards and Technology (NIST)\
-Email: nolson@nist.gov
+Email: <nolson@nist.gov>
 
 **Date of data collection**\
 2021-11
 
 **Background**\
-High coverage (100X) BGIsequencing of GIAB HG005 RM DNA [TODO - add brief method description].
+High coverage (100X) BGI sequencing of GIAB HG005 RM DNA. Sequencing was contracted out to BGIseq by NIST and performed using the DNBSEQ platform. Variant calling was performed using the GATK Haplotype Caller.
 
 **Usage**\
 Variant call files (vcf) can be use in any bioinformatic pipeline or downstream analyses for whole genome seqeuncing variant call analysis.
@@ -39,7 +39,7 @@ Links to publicly accessible locations of the data:
 
 DATA & FILE OVERVIEW
 --------------------
- 
+
 ```text
 .
 ├── HG005_GRCh37_BGIseq-2x150-100x_NIST_20211126_indel.vcf.gz
@@ -55,12 +55,10 @@ DATA & FILE OVERVIEW
 0 directories, 9 files
 ```
 
-
 **File Naming Convention**\
 Files are named according to the High coverage (100X) BGIsequencing of GIAB HG005. `HG005.[instrument id]_[YYMMDD]_[time].vcf.gz.tbi`
 
-
-**File Descriptions**
+**File Descriptions**\
 
 - `*vcf.gz`: variant call file
 
@@ -101,4 +99,3 @@ To the extent that NIST may hold copyright in countries other than the United St
 You may improve, modify, and create derivative works of the data or any portion of the data, and you may copy and distribute such modifications or works. Modified works should carry a notice stating that you changed the data and should note the date and nature of any such change. Please explicitly acknowledge the National Institute of Standards and Technology as the source of the data:  Data citation recommendations are provided at https://www.nist.gov/open/license.
 ​
 Permission to use this data is contingent upon your acceptance of the terms of this agreement and upon your providing appropriate acknowledgments of NIST’s creation of the data/work.
-

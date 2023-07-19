@@ -9,12 +9,12 @@ HG005 BGIseq High Coverage (100X) 150bp paired-end.
 **Principal Investigator**\
 Justin M. Zook\
 Institution: National Institute of Standards and Technology (NIST)\
-Email: jzook@nist.gov
+Email: <jzook@nist.gov>
 
 **Dataset Contact(s)**\
 Nathan D. Olson\
 Institution: National Institute of Standards and Technology (NIST)\
-Email: nolson@nist.gov
+Email: <nolson@nist.gov>
 
 **Date of data collection**\
 2021-11
@@ -43,57 +43,55 @@ Links to publicly accessible locations of the data:
 
 DATA & FILE OVERVIEW
 --------------------
- 
-```
+
+```text
 .
 ├── GRCh37
-│   ├── HG002_GRCh37_BGIseq-2x150-100x_NIST_20211126.bam
-│   └── HG002_GRCh37_BGIseq-2x150-100x_NIST_20211126.bam.bai
+│   ├── HG005_GRCh37_BGIseq-2x150-100x_NIST_20211126.bam
+│   └── HG005_GRCh37_BGIseq-2x150-100x_NIST_20211126.bam.bai
 ├── GRCh38
-│   ├── HG002_GRCh38_BGIseq-2x150-100x_NIST_20211126.bam
-│   └── HG002_GRCh38_BGIseq-2x150-100x_NIST_20211126.bam.bai
+│   ├── HG005_GRCh38_BGIseq-2x150-100x_NIST_20211126.bam
+│   └── HG005_GRCh38_BGIseq-2x150-100x_NIST_20211126.bam.bai
 ├── md5.in
 └── reads
-    ├── 211109_M024_V350038332_L01_HUMuarfR092940-606_1.fq.gz
-    ├── 211109_M024_V350038332_L01_HUMuarfR092940-606_2.fq.gz
-    ├── 211109_M024_V350038332_L01_HUMuarfR092940-607_1.fq.gz
-    ├── 211109_M024_V350038332_L01_HUMuarfR092940-607_2.fq.gz
-    ├── 211109_M024_V350038332_L01_HUMuarfR092940-608_1.fq.gz
-    ├── 211109_M024_V350038332_L01_HUMuarfR092940-608_2.fq.gz
-    ├── 211109_M024_V350038332_L01_HUMuarfR092940-609_1.fq.gz
-    ├── 211109_M024_V350038332_L01_HUMuarfR092940-609_2.fq.gz
-    ├── 211109_M024_V350038332_L01_HUMuarfR092940-610_1.fq.gz
-    ├── 211109_M024_V350038332_L01_HUMuarfR092940-610_2.fq.gz
-    ├── 211109_M024_V350038332_L02_HUMuarfR092940-606_1.fq.gz
-    ├── 211109_M024_V350038332_L02_HUMuarfR092940-606_2.fq.gz
-    ├── 211109_M024_V350038332_L02_HUMuarfR092940-607_1.fq.gz
-    ├── 211109_M024_V350038332_L02_HUMuarfR092940-607_2.fq.gz
-    ├── 211109_M024_V350038332_L02_HUMuarfR092940-608_1.fq.gz
-    ├── 211109_M024_V350038332_L02_HUMuarfR092940-608_2.fq.gz
-    ├── 211109_M024_V350038332_L02_HUMuarfR092940-609_1.fq.gz
-    ├── 211109_M024_V350038332_L02_HUMuarfR092940-609_2.fq.gz
-    ├── 211109_M024_V350038332_L02_HUMuarfR092940-610_1.fq.gz
-    ├── 211109_M024_V350038332_L02_HUMuarfR092940-610_2.fq.gz
-    ├── 211109_M024_V350038332_L03_HUMuarfR092940-606_1.fq.gz
-    ├── 211109_M024_V350038332_L03_HUMuarfR092940-606_2.fq.gz
-    ├── 211109_M024_V350038332_L03_HUMuarfR092940-607_1.fq.gz
-    ├── 211109_M024_V350038332_L03_HUMuarfR092940-607_2.fq.gz
-    ├── 211109_M024_V350038332_L03_HUMuarfR092940-608_1.fq.gz
-    ├── 211109_M024_V350038332_L03_HUMuarfR092940-608_2.fq.gz
-    ├── 211109_M024_V350038332_L03_HUMuarfR092940-609_1.fq.gz
-    ├── 211109_M024_V350038332_L03_HUMuarfR092940-609_2.fq.gz
-    ├── 211109_M024_V350038332_L03_HUMuarfR092940-610_1.fq.gz
-    └── 211109_M024_V350038332_L03_HUMuarfR092940-610_2.fq.gz
+    ├── 211109_M024_V350038332_L04_HUMuarfR092941-611_1.fq.gz
+    ├── 211109_M024_V350038332_L04_HUMuarfR092941-611_2.fq.gz
+    ├── 211109_M024_V350038332_L04_HUMuarfR092941-612_1.fq.gz
+    ├── 211109_M024_V350038332_L04_HUMuarfR092941-612_2.fq.gz
+    ├── 211109_M024_V350038332_L04_HUMuarfR092941-613_1.fq.gz
+    ├── 211109_M024_V350038332_L04_HUMuarfR092941-613_2.fq.gz
+    ├── 211109_M024_V350038332_L04_HUMuarfR092941-614_1.fq.gz
+    ├── 211109_M024_V350038332_L04_HUMuarfR092941-614_2.fq.gz
+    ├── 211109_M024_V350038332_L04_HUMuarfR092941-615_1.fq.gz
+    ├── 211109_M024_V350038332_L04_HUMuarfR092941-615_2.fq.gz
+    ├── 211109_M025_V350038580_L01_HUMuarfR092941-611_1.fq.gz
+    ├── 211109_M025_V350038580_L01_HUMuarfR092941-611_2.fq.gz
+    ├── 211109_M025_V350038580_L01_HUMuarfR092941-612_1.fq.gz
+    ├── 211109_M025_V350038580_L01_HUMuarfR092941-612_2.fq.gz
+    ├── 211109_M025_V350038580_L01_HUMuarfR092941-613_1.fq.gz
+    ├── 211109_M025_V350038580_L01_HUMuarfR092941-613_2.fq.gz
+    ├── 211109_M025_V350038580_L01_HUMuarfR092941-614_1.fq.gz
+    ├── 211109_M025_V350038580_L01_HUMuarfR092941-614_2.fq.gz
+    ├── 211109_M025_V350038580_L01_HUMuarfR092941-615_1.fq.gz
+    ├── 211109_M025_V350038580_L01_HUMuarfR092941-615_2.fq.gz
+    ├── 211109_M025_V350038580_L02_HUMuarfR092941-611_1.fq.gz
+    ├── 211109_M025_V350038580_L02_HUMuarfR092941-611_2.fq.gz
+    ├── 211109_M025_V350038580_L02_HUMuarfR092941-612_1.fq.gz
+    ├── 211109_M025_V350038580_L02_HUMuarfR092941-612_2.fq.gz
+    ├── 211109_M025_V350038580_L02_HUMuarfR092941-613_1.fq.gz
+    ├── 211109_M025_V350038580_L02_HUMuarfR092941-613_2.fq.gz
+    ├── 211109_M025_V350038580_L02_HUMuarfR092941-614_1.fq.gz
+    ├── 211109_M025_V350038580_L02_HUMuarfR092941-614_2.fq.gz
+    ├── 211109_M025_V350038580_L02_HUMuarfR092941-615_1.fq.gz
+    └── 211109_M025_V350038580_L02_HUMuarfR092941-615_2.fq.gz
 
 3 directories, 35 files
-
 ```
-
 
 **File Naming Convention**\
 Files are named according to the High coverage (100X) BGIsequencing of GIAB HG005. `HG005.[instrument id]_[YYMMDD]_[time].fq.gz`
 
-**File Descriptions**
+**File Descriptions**\
 
 - `*.fastq.gz`: basecall files in gzipped compressed fastq file format
 - `*bam`: Aligned reads to a reference genome.
@@ -102,7 +100,8 @@ Files are named according to the High coverage (100X) BGIsequencing of GIAB HG00
 METHODOLOGICAL INFORMATION
 --------------------------
 
-## DNBSEQ Short-read library preparation
+DNBSEQ Short-Read Library Preparation
+======================================
 
 1. DNA fragmentation
 2. Size selection
@@ -117,7 +116,8 @@ Sequencing-derived raw image files were processed by DNBSEQ basecalling Software
 with default parameters and the sequence data of each individual was generated as paired-end
 reads, which was defined as "raw data" and stored in FASTQ format.
 
-## Bioinformatics Analysis Overview
+Bioinformatics Analysis Overview
+================================
 
 The bioinformatics analysis began with the sequencing data. First, the clean data or clean reads was
 produced by data filtering on raw data. Then all clean data of each sample was mapped to the human
