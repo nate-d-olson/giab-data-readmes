@@ -1,6 +1,5 @@
 This README_NIST_BGISeq_100x_HG002.md was generated on 2023-07-12 by Ummey Jannat.
 
-------------------- 
 GENERAL INFORMATION
 -------------------
 
@@ -10,48 +9,38 @@ HG002 BGIseq High Coverage (100X) 150bp paired-end.
 **Principal Investigator**\
 Justin M. Zook\
 Institution: National Institute of Standards and Technology (NIST)\
-Email: jzook@nist.gov
+Email: <jzook@nist.gov>
 
 **Dataset Contact(s)**\
 Nathan D. Olson\
 Institution: National Institute of Standards and Technology (NIST)\
-Email: nolson@nist.gov
+Email: <nolson@nist.gov>
 
 **Date of data collection**\
 2021-11
 
 **Background**\
-High coverage (100X) BGIsequencing of GIAB HG002 RM DNA [TODO - add brief method description].
+High coverage (100X) BGI sequencing of GIAB HG002 RM DNA. Sequencing was contracted out to BGIseq by NIST and performed using the DNBSEQ platform. Variant calling was performed using the GATK Haplotype Caller.
 
 **Usage**\
-[TODO]
+Variant call files (vcf) can be use in any bioinformatic pipeline or downstream analyses for whole genome seqeuncing variant call analysis.
 
-**Limitations**\
-[TODO - Discuss any known limitations of the data being described by
-README. e.g. data is incomplete, assumptions that were made, exclusions, known
-issues, etc.]
-
---------------------------
 SHARING/ACCESS INFORMATION
 --------------------------
 
 **Licenses/restrictions placed on the data, or limitations of reuse**\
 See NIST license and data use policy at the end of the document.
 
-**Recommended citation for the data**
-[TODO]
-
 **Links to other publicly accessible locations of the data**\
 Links to publicly accessible locations of the data:
 
-- NIH hosted GIAB ftp site: TODO
-- SRA: TODO 
+- NIH hosted GIAB ftp site: ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/analysis/NIST_BGIseq_2x150bp_100x
+- SRA: Will provide when submitted
 
---------------------
 DATA & FILE OVERVIEW
 --------------------
- 
-```
+
+```text
 ├── HG002_GRCh37_BGIseq-2x150-100x_NIST_20211126_indel.vcf.gz
 ├── HG002_GRCh37_BGIseq-2x150-100x_NIST_20211126_indel.vcf.gz.tbi
 ├── HG002_GRCh37_BGIseq-2x150-100x_NIST_20211126_snp.vcf.gz
@@ -63,99 +52,48 @@ DATA & FILE OVERVIEW
 └── md5.in
 ```
 
-
 **File Naming Convention**\
 Files are named according to the High coverage (100X) BGIsequencing of GIAB HG002 `HG002.[instrument id]_[YYMMDD]_[time].vcf.gz.tbi`
 
+**File Descriptions**\
 
-**File Descriptions**
-TODO
+- `*vcf.gz`: variant call file
 
---------------------------
 METHODOLOGICAL INFORMATION
 --------------------------
-DNA Sequencing
-DNBSEQ Short-read library preparation：
-1. DNA fragmentation
-2. Size selection
-3. End repair and "A" tailing
-4. Adapter ligation
-5. Product size selection
-6. PCR reaction
-7. Library QC
-8. Sequencing
-Sequencing-derived raw image files were processed by DNBSEQ basecalling Software for base-calling
-with default parameters and the sequence data of each individual was generated as paired-end
-reads, which was defined as "raw data" and stored in FASTQ format.
 
-Bioinformatics Analysis Overview
-The bioinformatics analysis began with the sequencing data. First, the clean data or clean reads was
-produced by data filtering on raw data. Then all clean data of each sample was mapped to the human
-reference genome to get initial comparison file in BAM format. Burrows-Wheeler Aligner (BWA)
-software was used to do the alignment. To ensure accurate variant calling, we followed recommended
-Best Practices for variant analysis with the Genome Analysis Toolkit(GATK). Base quality score
-recalibration and duplicate reads marked were performed using GATK . The sequencing depth and
-coverage for each individual were calculated based on the alignments.
-In addition, the strict data analysis quality control system(QC) in the whole pipeline was built to
-guarantee qualified sequencing data.
-
-Variant Calling
-Use GATK HaplotypeCaller tool to simultaneously detect SNPs and InDels . The principle is to do
+Used GATK HaplotypeCaller tool to simultaneously detect SNPs and InDels. The principle is to do
 partial denovo assembly of haplotypes in areas with variant signals. The original mutation set is
 stored in VCF format, which includes all potential mutation sites. The software information and
-command line parameters are as follows:
-Software Version Link
-GATK
-HaplotypeCaller
-v4.1.4.1
-https://gatk.broadinstitute.org/hc/enus/articles/360037225632-HaplotypeCaller 
+command line parameters are as follows: GATK HaplotypeCaller v4.1.4.1
+<https://gatk.broadinstitute.org/hc/enus/articles/360037225632-HaplotypeCaller>.
 
-```
+```bash
 gatk -T HaplotypeCaller \
--R reference.fasta \
--I bqsr.bam \
--O raw.g.vcf
--ERC GVCF
+    -R reference.fasta \
+    -I bqsr.bam \
+    -O raw.g.vcf
+    -ERC GVCF
 ```
 
 Germline mutation calling is based on the comparison result Bam file, including the detection and
 annotation of SNP, InDel, SV and CNV (the latter two are limited to whole-genome sequencing).
-
-
 
 **Quality Assurance**\
 To ensure accurate variant calling, we followed recommended Best Practices for variant analysis with the Genome Analysis Toolkit(GATK). Base quality score
 recalibration and duplicate reads marked were performed using GATK. The sequencing depth and
 coverage for each individual were calculated based on the alignments.
 
-In addition, the strict data analysis quality control system(QC) in the whole pipeline was built to
-guarantee qualified sequencing data.
+NIST Data Use Policy
+--------------------------------------------------------------------------------
 
---------------------------
-DATA USE POLICY
---------------------------
-
-This software was developed by employees of the National Institute of Standards
-and Technology (NIST), an agency of the Federal Government and is being made
-available as a public service. Pursuant to title 17 United States Code Section
-105, works of NIST employees are not subject to copyright protection in the
-United States. This software may be subject to foreign copyright. Permission in
-the United States and in foreign countries, to the extent that NIST may hold
-copyright, to use, copy, modify, create derivative works, and distribute this
-software and its documentation without fee is hereby granted on a non-exclusive
-basis, provided that this notice and disclaimer of warranty appears in all
-copies.
-
-THE SOFTWARE IS PROVIDED 'AS IS' WITHOUT ANY WARRANTY OF ANY KIND, EITHER
-EXPRESSED, IMPLIED, OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, ANY WARRANTY
-THAT THE SOFTWARE WILL CONFORM TO SPECIFICATIONS, ANY IMPLIED WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND FREEDOM FROM
-INFRINGEMENT, AND ANY WARRANTY THAT THE DOCUMENTATION WILL CONFORM TO THE
-SOFTWARE, OR ANY WARRANTY THAT THE SOFTWARE WILL BE ERROR FREE. IN NO EVENT
-SHALL NIST BE LIABLE FOR ANY DAMAGES, INCLUDING, BUT NOT LIMITED TO, DIRECT,
-INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES, ARISING OUT OF, RESULTING FROM, OR
-IN ANY WAY CONNECTED WITH THIS SOFTWARE, WHETHER OR NOT BASED UPON WARRANTY,
-CONTRACT, TORT, OR OTHERWISE, WHETHER OR NOT INJURY WAS SUSTAINED BY PERSONS OR
-PROPERTY OR OTHERWISE, AND WHETHER OR NOT LOSS WAS SUSTAINED FROM, OR AROSE OUT
-OF THE RESULTS OF, OR USE OF, THE SOFTWARE OR SERVICES PROVIDED HEREUNDER.
-
+​
+This data/work was created by employees of the National Institute of Standards and Technology (NIST), an agency of the Federal Government. Pursuant to title 17 United States Code Section 105, works of NIST employees are not subject to copyright protection in the United States.  This data/work may be subject to foreign copyright.
+​
+The data/work is provided by NIST as a public service and is expressly provided “AS IS.” NIST MAKES NO WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT AND DATA ACCURACY. NIST does not warrant or make any representations regarding the use of the data or the results thereof, including but not limited to the correctness, accuracy, reliability or usefulness of the data. NIST SHALL NOT BE LIABLE AND YOU HEREBY RELEASE NIST FROM LIABILITY FOR ANY INDIRECT, CONSEQUENTIAL, SPECIAL, OR INCIDENTAL DAMAGES (INCLUDING DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, AND THE LIKE), WHETHER ARISING IN TORT, CONTRACT, OR OTHERWISE, ARISING FROM OR RELATING TO THE DATA (OR THE USE OF OR INABILITY TO USE THIS DATA), EVEN IF NIST HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+​
+To the extent that NIST may hold copyright in countries other than the United States, you are hereby granted the non-exclusive irrevocable and unconditional right to print, publish, prepare derivative works and distribute the NIST data, in any medium, or authorize others to do so on your behalf, on a royalty-free basis throughout the world.
+​
+You may improve, modify, and create derivative works of the data or any portion of the data, and you may copy and distribute such modifications or works. Modified works should carry a notice stating that you changed the data and should note the date and nature of any such change. Please explicitly acknowledge the National Institute of Standards and Technology as the source of the data:  Data citation recommendations are provided at https://www.nist.gov/open/license.
+​
+Permission to use this data is contingent upon your acceptance of the terms of this agreement and upon your providing appropriate acknowledgments of NIST’s creation of the data/work.
