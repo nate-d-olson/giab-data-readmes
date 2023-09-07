@@ -5,7 +5,7 @@ BACKGROUND
 This README file contains information for the SMRT Sequencing data from a 
 HG002/NA24385/huAA53E0, Ashkenazim Son sample using Binding/Sequencing chemistry 
 3.0 and SMRT Link 6.0. One shotgun library was prepared from a NIST reference material
-DNA sample(RM 8392,https://shop.nist.gov/ccrz__ProductDetails?sku=8391&cclcl=en_US). 
+DNA sample(RM 8391,https://shop.nist.gov/ccrz__ProductDetails?sku=8391&cclcl=en_US). 
 selection was performed,targeting a narrow size band ~10kb using the sageELF DNA size-selection system 
 from SAGE Science. Circular consenus sequences were calculated using default 
 parameters and a predicted read accuracy filter of Q20 (99%) using SMRT Link 
