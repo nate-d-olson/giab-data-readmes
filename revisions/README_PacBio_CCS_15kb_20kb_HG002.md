@@ -1,5 +1,6 @@
 SAMPLE
     HG002 extracted DNA from Coriell Institute for Medical Research
+    
 SEQUENCING METHODS
     Shearing        20 kb with Megaruptor
     Sequencing      Sequel II System with 2.0 chemistry
