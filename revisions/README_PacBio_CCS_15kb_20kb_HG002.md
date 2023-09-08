@@ -1,5 +1,5 @@
-SAMPLE
-    HG002 extracted DNA from Coriell Institute for Medical Research
+SAMPLE 
+HG002 GIAB sample. Genomic DNA extracted from Coriell Institute for Medical Research, https://catalog.coriell.org/0/Sections/Search/Sample_Detail.aspx?Ref=NA24385&Product=DNA
     
 SEQUENCING METHODS
     Shearing        20 kb with Megaruptor
